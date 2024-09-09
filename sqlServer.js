@@ -32,7 +32,7 @@ sql.connect(config, (err) => {
 app.get('/',async(req,res)=>{
   res.send("Api Started Successfully")
 })
-app.get('/api/task2', async (req, res) => {
+app.get('/task2', async (req, res) => {
   try {
     const result = await sql.query('SELECT TOP 20 * FROM  [SalesLT].[Customer]');
     res.json(result.recordset);
@@ -41,7 +41,7 @@ app.get('/api/task2', async (req, res) => {
   }
 });
  
-app.get('/api/task3', async (req, res) => {
+app.get('/task3', async (req, res) => {
   try {
     const result = await sql.query('SELECT p.Name,p.Color,p.Size,p.Weight FROM [SalesLT].[Product] p INNER JOIN [SalesLT].[ProductCategory] pc ON p.ProductCategoryID = pc.ProductCategoryID;');
     res.json(result.recordset);
