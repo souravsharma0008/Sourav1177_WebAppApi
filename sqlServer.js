@@ -29,7 +29,7 @@ sql.connect(config, (err) => {
   if (err) console.error('SQL connection error:', err);
 });
  
-app.get('/',async(res,res)=>{
+app.get('/',async(req,res)=>{
   res.send("Api Started Successfully")
 })
 app.get('/api/task2', async (req, res) => {
