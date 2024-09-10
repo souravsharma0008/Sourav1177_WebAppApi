@@ -7,7 +7,7 @@ const port = 5000;
 const config = {
   user: 'maqadmin',
   password: '#1Password',
-  server: 'sepbootcamp.database.windows.net',
+  server: 'sep2bootcamp.database.windows.net',
   database: 'Sep2bootcampDB',
   options: {
     encrypt: true, 
